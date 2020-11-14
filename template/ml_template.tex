@@ -1,0 +1,40 @@
+\documentclass{dfki_ml}
+% \exsheetheader{exercise sheet number}{hand in date}{group number}{estimated time in hours}
+%               {group member 1}{group member 2}{group member 3}{group member 4}
+
+\exsheetheader{1}{01.01.2018}{42}{2}{Max Musterman}{}{}{}
+
+\begin{document}
+
+\begin{problem}{Instructions}
+This is an example usage of the template. In this problem
+we will use an inline python code. One very useful library
+is \textbf{numpy} and can be imported as shown: \pythoninline{import numpy as np}.
+\end{problem}
+
+
+\begin{problem}{Larger Python sections}
+If we want to refer to a chunk of python code we can use the python
+environment.
+\begin{python}
+import numpy as np
+
+def random_number():
+    return 4 # Chosen by fair dice roll :)
+    
+print(random_number())
+\end{python}
+\end{problem}
+
+\begin{problem}{Reduce redundancy}
+And as we like to make life easier for the people who have to
+correct our solutions we always should append the original python
+source files (as they are handed in as well) at the end of the 
+document. This can be done by simply referring to a python file
+with the command \textbf{pythonexternal}:
+
+\pythonexternal{example.py}
+
+\end{problem}
+
+\end{document}
